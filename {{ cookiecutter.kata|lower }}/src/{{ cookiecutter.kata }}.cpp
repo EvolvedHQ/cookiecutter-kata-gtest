@@ -1,0 +1,1 @@
+#include "{{ cookiecutter.kata }}.hpp"

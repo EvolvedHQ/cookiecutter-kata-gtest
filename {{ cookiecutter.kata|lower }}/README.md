@@ -1,0 +1,1 @@
+# {{ cookiecutter.kata }} Code Kata

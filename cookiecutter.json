@@ -1,6 +1,6 @@
 {
-    "kata_name": "CodeKata",
-    "project_name": "codekata",
+    "kata": "CodeKata",
+    "etags": "y",
     "_copy_without_render": [
         "*lib"
     ]
