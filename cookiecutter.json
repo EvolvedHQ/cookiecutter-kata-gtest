@@ -1,0 +1,7 @@
+{
+    "kata_name": "CodeKata",
+    "project_name": "codekata",
+    "_copy_without_render": [
+        "*lib"
+    ]
+}
