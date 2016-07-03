@@ -1,16 +1,33 @@
 # {{ cookiecutter.kata }} Code Kata
 
 Welcome to your new Code Kata.  Test-driven C++ is a lot of fun, and a
-highly immersive learning experience.
+great form of "deliberate practice".  You're almost there - there's
+one more step needed to get up and running.
 
 ## Generating the build
 
-The author of this Cookiecutter uses Clang and C++14, so his CMake
-invocation is:
+You've used a cookiecutter to generate this project, but there's
+another step to get started - this project is based on CMake, so you
+need to use this CMake build to generate a build that will work on
+your system.
+
+This build structure can be done "out of tree" (ie not in this folder
+structure), or use the .build/ folder that's automatically created -
+this is also in the .gitignore by default, if you want
+
+A typical CMake invocation (for Clang and C++14) would be:
 
 ```
-$ cmake -DCMAKE_CXX_COMPILER=clang++ -DCMAKE_BUILD_TYPE=Debug -DCMAKE_CXX_FLAGS="-std=c++14"
+$ cd .build
+$ cmake -DCMAKE_CXX_COMPILER=clang++ -DCMAKE_BUILD_TYPE=Debug
+  -DCMAKE_CXX_FLAGS="-std=c++14"
   -DCMAKE_CXX_FLAGS_DEBUG="-fstandalone-debug -ggdb -O0" ..
+```
+
+Then run the makefile as (for example):
+
+```
+$ make -j8 unit
 ```
 
 ## The TDD microcycle
