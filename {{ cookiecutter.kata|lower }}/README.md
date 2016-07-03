@@ -23,19 +23,19 @@ TDD explanation todo
   | of code to make the test fail, |------------+
   | and treat compilation failures |            |
   | as a test failure.             |            |
-  +------+-------------------------+            |
-         |                                      |
-         |                                      |
-         |                +---------------------+----------------+
-         |                | GREEN: write the smallest amount of  |
-         |                | production code to pass the one      |
-         |                | failing test.                        |
-         |                +---------------------+----------------+
+  +--------------------------------+            |
+         ^                                      |
+         |                                      v
+         |                +-------------------------------------+
+         |                | GREEN: write the smallest amount of |
+         |                | production code to pass the one     |
+         |                | failing test.                       |
+         |                +---------------------+---------------+
          |                                      |
          |                                      |
      +---+-----------------------------+        |
      | REFACTOR: clean up the code,    |        |
-     | remove duplication, improve     +--------+
+     | remove duplication, improve     |<-------+
      | names to better express intent. |
      +---------------------------------+
 ```
