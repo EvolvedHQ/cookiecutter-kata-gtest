@@ -15,7 +15,12 @@ $ cmake -DCMAKE_CXX_COMPILER=clang++ -DCMAKE_BUILD_TYPE=Debug -DCMAKE_CXX_FLAGS=
 
 ## The TDD microcycle
 
-TDD explanation todo
+TDD gives you a very fast feedback cycle, and helps you build a
+solution incrementally, in baby steps.
+
+TDD gives you feedback on your design and lets you make many, small,
+incremental improvements to your code - you can do this with
+confidence because the tests will catch any regressions.
 
 ```                                 
   +--------------------------------+
@@ -39,3 +44,16 @@ TDD explanation todo
      | names to better express intent. |
      +---------------------------------+
 ```
+
+## Resources
+
+There's a great list of Code Kata exercises at
+[codekata.com](http://codekata.com/). Emily Bache write and published
+[an excellent book](https://leanpub.com/codingdojohandbook) on code
+katas, and guidance for running coding dojos.
+
+Read the documentation on [Google
+Mock](https://github.com/google/googletest/tree/master/googlemock/docs/v1_7)
+and [Google
+Test](https://github.com/google/googletest/tree/master/googletest/docs)
+online.
