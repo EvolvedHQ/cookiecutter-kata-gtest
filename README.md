@@ -26,16 +26,15 @@ $ pip install cookiecutter
 ```
 
 After the kata project is created, you'll need to generate a build
-using CMake, and then of course compile, link and execute the
-kata. This is all going to take a fairly complete C++ development
-toolchain, and you'll need to figure out how to get this configured
-for your platform, if you don't already have one.
+using [CMake](https://cmake.org/), and then of course compile, link
+and execute the kata. This is all going to take a fairly complete C++
+development toolchain, and you'll need to figure out how to get this
+configured for your platform, if you don't already have one.
 
-The minimum requirements are from Google Mock, which supports C++98 or
-later (although we'd suggest that TDD in C++ is so much more fun with
-C++14 or later using a modern toolchain...):
-
-https://github.com/google/googletest
+The minimum requirements for building this are really those from
+[Google Test/Google Mock](https://github.com/google/googletest), which
+supports C++98 or later (although we'd suggest that TDD in C++ is so
+much more fun with C++14 or later using a modern toolchain...):
 
 ## Generating your project
 
@@ -77,9 +76,11 @@ the kata name, or if you're a snake_case type, then use "game_of_life".
 etags [y]:
 ```
 
-Whether or not to include the build file magic for generating an etags
-file when recompiling-, which defaults to "y". If you choose no, there
-will be no dependency on etags in the build.
+This lets you decide whether or not to include the build file magic
+for generating an [etags
+file](https://www.emacswiki.org/emacs/BuildTags) when recompiling-,
+which defaults to "y". If you choose no, there will be no dependency
+on etags in the build.
 
 If you want to, you can always add any extra tools you need (static
 analyzers, sanitizers etc) into the CMake file yourself - it's a
