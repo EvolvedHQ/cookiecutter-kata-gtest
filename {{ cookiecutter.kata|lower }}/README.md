@@ -33,11 +33,13 @@ $ make -j8 unit
 ## The TDD microcycle
 
 TDD gives you a very fast feedback cycle, and helps you build a
-solution incrementally, in baby steps.
+solution incrementally, in baby steps.  TDD gives you feedback on your
+design and lets you make many, small, incremental improvements to your
+code - you can do this with confidence because the tests will catch
+any regressions.
 
-TDD gives you feedback on your design and lets you make many, small,
-incremental improvements to your code - you can do this with
-confidence because the tests will catch any regressions.
+TDD uses a microcycle of three phases, always starting with "RED" : a
+failing test, or failing compilation.
 
 ```                                 
   +--------------------------------+
