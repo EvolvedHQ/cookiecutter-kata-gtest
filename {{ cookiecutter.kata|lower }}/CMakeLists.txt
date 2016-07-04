@@ -27,7 +27,7 @@ enable_testing ()
 # Add the unit tests executable 
 add_test (Unit {{ cookiecutter.kata|lower }}test)
 
-{% if cookiecutter.etags is == "y" %}
+{% if cookiecutter.etags == "y" %}
 # Generate the tags file
 file (GLOB headers ${PROJECT_SOURCE_DIR}/include/*.hpp)
 set_source_files_properties(TAGS PROPERTIES GENERATED true)
