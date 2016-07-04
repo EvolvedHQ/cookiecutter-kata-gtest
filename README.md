@@ -52,7 +52,7 @@ $ cookiecutter https://github.com/13coders/cookiecutter-kata-gtest
 ```
 
 This template is intended to be very simple, so cookiecutter will
-prompt you for only two parameters when you are creating your project:
+prompt you for only three parameters when you are creating your project:
 
 ```
 kata [CodeKata]: 
@@ -86,6 +86,10 @@ on etags in the build.
 If you want to, you can always add any extra tools you need (static
 analyzers, sanitizers etc) into the CMake file yourself - it's a
 minimal starting point.
+
+```
+
+```
 
 ## Next steps
 
