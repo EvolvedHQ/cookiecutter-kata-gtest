@@ -74,7 +74,10 @@ So, if you prefer CamelCase file names, use something like
 then use "game_of_life".
 
 ```
-etags [y]:
+Select etags:
+1 - y
+2 - n
+Choose from 1, 2 [1]: 1
 ```
 
 This lets you decide whether or not to include the build file magic
@@ -88,8 +91,16 @@ analyzers, sanitizers etc) into the CMake file yourself - it's a
 minimal starting point.
 
 ```
-
+Select license:
+1 - GNU General Public License v3
+2 - MIT license
+3 - Apache Software License 2.0
+Choose from 1, 2, 3 [1]: 1
 ```
+
+Lets you select the free/open source license for your kata sources. If
+you don't want a license, just delete the contents of the LICENSE file
+after generating the project. Defaults to GPL v3.
 
 ## Next steps
 
