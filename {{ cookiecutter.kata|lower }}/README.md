@@ -38,13 +38,13 @@ design and lets you make many, small, incremental improvements to your
 code - you can do this with confidence because the tests will catch
 any regressions.
 
-TDD uses a microcycle of three phases, always starting with "RED" : a
+TDD uses a microcycle of three phases, always starting with RED : a
 failing test, or failing compilation.
 
 ```                                 
   +--------------------------------+
   | RED: write the smallest amount |
-  | of code to make the test fail, |------------+
+  | of code to make the test fail, +------------+
   | and treat compilation failures |            |
   | as a test failure.             |            |
   +--------------------------------+            |
@@ -63,6 +63,25 @@ failing test, or failing compilation.
      | names to better express intent. |
      +---------------------------------+
 ```
+
+## The Four Rules of Simple Design
+
+When you're doing a kata, try to stick to the "four rules" as
+described first by Kent Beck:
+
+- Passes the tests
+- Reveals intention
+- No duplication
+- Fewest elements
+
+These are described very well by Joe Rainsberger
+[here](http://blog.jbrains.ca/permalink/the-four-elements-of-simple-design)
+and
+[here](http://blog.thecodewhisperer.com/permalink/putting-an-age-old-battle-to-rest/). Corey
+Haines wrote an [excellent, small
+book](https://leanpub.com/4rulesofsimpledesign) on the subject based
+on his observations running the Game Of Life Kata over many code
+retreats.
 
 ## Resources
 
