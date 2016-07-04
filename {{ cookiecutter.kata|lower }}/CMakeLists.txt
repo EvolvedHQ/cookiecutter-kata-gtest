@@ -27,7 +27,7 @@ enable_testing ()
 # Add the unit tests executable 
 add_test (Unit {{ cookiecutter.kata|lower }}test)
 
-{% if cookiecutter.etags is equalto 'y' %}
+{% if cookiecutter.etags is == "y" %}
 # Generate the tags file
 file (GLOB headers ${PROJECT_SOURCE_DIR}/include/*.hpp)
 set_source_files_properties(TAGS PROPERTIES GENERATED true)
@@ -41,4 +41,4 @@ add_custom_command(OUTPUT TAGS
 # specific target to support the TDD cycle
 add_custom_target(unit
   COMMAND ${CMAKE_BINARY_DIR}/{{ cookiecutter.kata|lower }}test --gtest_color=true
-  DEPENDS {{ cookiecutter.kata|lower }}test {% if cookiecutter.etags is equalto 'y' %} TAGS {% endif %})
+  DEPENDS {{ cookiecutter.kata|lower }}test {% if cookiecutter.etags == "y" %} TAGS {% endif %})
