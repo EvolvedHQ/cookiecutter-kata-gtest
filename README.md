@@ -34,7 +34,7 @@ configured for your platform, if you don't already have one.
 The minimum requirements for building this are really those from
 [Google Test/Google Mock](https://github.com/google/googletest), which
 supports C++98 or later (although we'd suggest that TDD in C++ is so
-much more fun with C++14 or later using a modern toolchain...):
+much more fun with C++14 or later using a modern toolchain...).
 
 ## Generating your project
 
@@ -48,29 +48,30 @@ $ cookiecutter <path-to-this-template>
 or directly from the GitHub URL where the template lives:
 
 ```
-$ cookiecutter https://github.com/13coders/template-kata-gtest
+$ cookiecutter https://github.com/13coders/cookiecutter-kata-gtest
 ```
 
-Cookiecutter will prompt you for only a few parameters, and most of
-them can be globally configured for reuse.
+This template is intended to be very simple, so cookiecutter will
+prompt you for only two parameters when you are creating your project:
 
 ```
 kata [CodeKata]: 
 ```
 
-This is name of the Code Kata. Typical values will be "GameOfLife".
-Whatever name you provide will be capitalised exactly as you enter it
-for:
+This is name/title of the Code Kata. Whatever name you provide will be
+capitalised exactly as you enter it:
 
-- The name of the test file, source file and header will be, for
-  example "GameOfLife.cpp", "GameOfLifeTest.cpp" etc
+- If you use camel case, the name of the test file, source file and
+  header will be, for example "GameOfLife.cpp", "GameOfLifeTest.cpp"
+  etc
 
 - The name will be lowercased for the CMake file, the name of the
   repository, the value in the #include guard and the dummy namespace
-  that's
+  that's generated in the header
 
-So, long story short, if you're a CamelCase type, use "GameOfLife" as
-the kata name, or if you're a snake_case type, then use "game_of_life".
+So, if you prefer CamelCase file names, use something like
+"GameOfLife" as the kata name, or if you prefer snake_case file names,
+then use "game_of_life".
 
 ```
 etags [y]:

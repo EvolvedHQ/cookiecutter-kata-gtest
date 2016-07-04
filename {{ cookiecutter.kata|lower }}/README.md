@@ -86,9 +86,9 @@ retreats.
 ## Resources
 
 There's a great list of Code Kata exercises at
-[codekata.com](http://codekata.com/). Emily Bache write and published
-[an excellent book](https://leanpub.com/codingdojohandbook) on code
-katas, and guidance for running coding dojos.
+[codekata.com](http://codekata.com/). Emily Bache wrote and published
+[a guide book](https://leanpub.com/codingdojohandbook) on code katas,
+with guidance and ideas for running coding dojos.
 
 Read the documentation on [Google
 Mock](https://github.com/google/googletest/tree/master/googlemock/docs/v1_7)
