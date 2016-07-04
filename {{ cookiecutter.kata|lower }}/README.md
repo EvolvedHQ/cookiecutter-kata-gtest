@@ -30,15 +30,15 @@ Then run the makefile as (for example):
 $ make -j8 unit
 ```
 
-## The TDD microcycle
+## The TDD cycle
 
-TDD gives you a very fast feedback cycle, and helps you build a
-solution incrementally, in baby steps.  TDD gives you feedback on your
-design and lets you make many, small, incremental improvements to your
-code - you can do this with confidence because the tests will catch
-any regressions.
+TDD gives you a very fast feedback cycle, and helps you evolve a
+solution incrementally, in very small steps.  TDD gives you feedback
+on your design and lets you make many, small improvements to your
+code. You can do this with confidence because the tests will catch any
+accidental regression as you apply these refactorings.
 
-TDD uses a microcycle of three phases, always starting with RED : a
+TDD uses a cycle of three phases, always starting with RED : a
 failing test, or failing compilation.
 
 ```                                 
