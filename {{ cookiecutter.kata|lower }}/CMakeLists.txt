@@ -31,7 +31,7 @@ add_test (Unit {{ cookiecutter.kata|lower }}test)
 # Generate the tags file
 file (GLOB headers ${PROJECT_SOURCE_DIR}/include/*.hpp)
 set_source_files_properties(TAGS PROPERTIES GENERATED true)
-add_custom_command(OUTPUT TAGS
+add_custom_target(tags
   COMMAND etags --language=c++ --declarations --ignore-indentation
   ${productionSources} ${testSources} ${headers}
   WORKING_DIRECTORY ${CMAKE_BINARY_DIR})
@@ -41,4 +41,4 @@ add_custom_command(OUTPUT TAGS
 # specific target to support the TDD cycle
 add_custom_target(unit
   COMMAND ${CMAKE_BINARY_DIR}/{{ cookiecutter.kata|lower }}test --gtest_color=true
-  {% if cookiecutter.etags == "y" %} DEPENDS {{ cookiecutter.kata|lower }}test TAGS {% endif %})
+  {% if cookiecutter.etags == "y" %} DEPENDS {{ cookiecutter.kata|lower }}test tags {% endif %})
