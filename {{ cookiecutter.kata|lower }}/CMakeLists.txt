@@ -2,7 +2,7 @@ cmake_minimum_required (VERSION 2.8)
 
 project ({{ cookiecutter.kata|lower }}-kata)
 
-# We have gtest/gmock as a Git submoduile, add subdirectory to pick
+# We have gtest/gmock as a Git submodule, add subdirectory to pick
 # this up we we can use it as a dependency
 add_subdirectory(lib/gtest)
 
